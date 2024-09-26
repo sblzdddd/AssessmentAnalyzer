@@ -1,0 +1,12 @@
+
+#chartView {
+    background-color: transparent;
+}
+
+#titleLabel {
+    font: 36px 'Segoe UI SemiBold', 'Microsoft YaHei SemiBold';
+    background-color: transparent;
+    color: white;
+}
+
+
