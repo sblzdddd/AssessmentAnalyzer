@@ -28,6 +28,6 @@ if __name__ == '__main__':
         loginWindow = LoginWindow()
         loginWindow.show()
     else:
-        mainWindow = MainWindow()
+        mainWindow = MainWindow(cmsClient)
         mainWindow.show()
     sys.exit(app.exec_())

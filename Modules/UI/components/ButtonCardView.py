@@ -114,5 +114,6 @@ class CardList(QWidget):
         card = ButtonCard(icon, title, content, action, self)
         card.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
         self.vBoxLayout.addWidget(card)
+        return card
 
 

@@ -47,5 +47,5 @@ class CMSClient:
     def get_assessments(self, year):
         resp = self.session.get(f"{API_ROOT}/api/legacy/students/my/assessments/?year={year}")
         if resp.status_code == 200:
-            return resp.json()
-        return None
+            return True, resp.json()
+        return False, resp.text

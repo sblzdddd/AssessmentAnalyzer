@@ -77,7 +77,7 @@ class Ui_MainWindow(Window):
         self.chartView = QWebEngineView()
         self.chartView.setObjectName("chartView")
         self.chartView.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
-        # self.chartView.setContextMenuPolicy(Qt.NoContextMenu)
+        self.chartView.setContextMenuPolicy(Qt.NoContextMenu)
         self.contentVL.addWidget(self.chartView)
 
         QMetaObject.connectSlotsByName(self)

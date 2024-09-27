@@ -42,7 +42,7 @@ class LoginWindow(Ui_Login):
             self.timer.timeout.connect(self.open_main_window)
             self.timer.start(1000)  # 3000 milliseconds = 3 seconds
         else:
-            InfoBar.success(
+            InfoBar.error(
                 title='Login Failed!', content=message,
                 position=InfoBarPosition.TOP, parent=self
             )
@@ -69,8 +69,8 @@ class LoginWindow(Ui_Login):
         return False
 
     def open_main_window(self):
+        # Create and show the main window
+        self.main_window = MainWindow(client)
+        self.main_window.show()
         # Hide the login window
         self.hide()
-        # Create and show the main window
-        self.main_window = MainWindow()
-        self.main_window.show()
