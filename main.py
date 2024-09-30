@@ -1,16 +1,17 @@
 import os
 import sys
 
-from PyQt5.QtCore import Qt, QLocale
+from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QApplication
-from qfluentwidgets import FluentTranslator, setTheme, Theme, setThemeColor
+from qfluentwidgets import setTheme, Theme, setThemeColor
 
-from Modules.CMS.CMSClient import CMSClient
-from Modules.UI import LoginWindow, MainWindow
+from App.CMS.CMSClient import CMSClient
+from App.UI import LoginWindow, MainWindow
 
 # ensure correct working directory
 os.chdir(
-    os.path.dirname(sys.executable) if getattr(sys, 'frozen', False) else os.path.dirname(os.path.abspath(__file__)))
+    os.path.dirname(sys.executable) if getattr(sys, 'frozen', False) else os.path.dirname(os.path.abspath(__file__))
+)
 
 if __name__ == '__main__':
     # enable dpi scale
