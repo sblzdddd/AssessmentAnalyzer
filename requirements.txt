@@ -1,0 +1,4 @@
+pyqt5~=5.15.10
+numpy
+PyQt-Fluent-Widgets
+numpy
